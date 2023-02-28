@@ -27,7 +27,7 @@ h4 {
   color: var(--black-color);
 }
 h6 {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
 }
 p {
@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 /*=============== Custom CSS ============ */
-
+/* ==============Home Page ================= */
 /* ===========Header CSS ================ */
 #header {
   display: flex;
@@ -120,3 +120,52 @@ body {
   background-repeat: no-repeat;
 }
 /* ===========Header CSS ================ */
+/* ============features CSS================= */
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#features .fea-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: var(--common-transition);
+}
+#features .fea-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#features .fea-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#features .fea-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  color: var(--common-color);
+  background-color: #fddde4;
+  border-radius: 5px;
+}
+#features .fea-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#features .fea-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#features .fea-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#features .fea-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#features .fea-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+/* ============features CSS================= */
+/* ==============Home Page ================= */
