@@ -5,6 +5,9 @@
   --black-color: #222;
   --white-color: #fff;
   --common-transition: all 0.5s ease;
+  --FW-700: 700;
+  --FW-600: 600;
+  --FW-500: 500;
 }
 /*=============== Custom CSS ============ */
 * {
@@ -29,7 +32,7 @@ h4 {
 }
 h6 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--FW-700);
 }
 p {
   font-size: 20px;
@@ -38,7 +41,7 @@ p {
 }
 button.normal {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--FW-600);
   background-color: var(--white-color);
   color: var(--black-color);
   transition: var(--common-transition);
@@ -47,6 +50,17 @@ button.normal {
   border-radius: 4px;
   outline: none;
   border: none;
+}
+button.white {
+  font-size: 16px;
+  font-weight: var(--FW-600);
+  background-color: transparent;
+  color: var(--white-color);
+  transition: var(--common-transition);
+  padding: 10px 25px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--white-color);
 }
 .section-p1 {
   padding: 40px 80px;
@@ -85,7 +99,7 @@ body {
 #navbar li a {
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: var(--FW-600);
   color: #1a1a1a;
   transition: var(--common-transition);
 }
@@ -127,7 +141,7 @@ body {
   color: var(--common-color);
   border: 0;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--FW-700);
   padding: 14px 80px 14px 65px;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -217,7 +231,7 @@ body {
 #product1 .pro .des span {
   color: #606063;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--FW-500);
 }
 #product1 .pro .des h5 {
   font-size: 20px;
@@ -231,7 +245,7 @@ body {
 }
 #product1 .pro .des h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--FW-700);
   padding-top: 5px;
   color: var(--common-color);
 }
@@ -241,7 +255,7 @@ body {
   line-height: 40px;
   border-radius: 50px;
   background-color: #e8f6ea;
-  font-weight: 500;
+  font-weight: var(--FW-500);
   color: var(--common-color);
   border: 1px solid #cce7d0;
   position: absolute;
@@ -281,4 +295,45 @@ body {
   color: var(--white-color);
 }
 /* ==========Banner Section =============== */
+/* ===========Action Banner Section =========== */
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../img/banner/b17.jpg");
+  width: 580px;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+#sm-banner .banner-box2 {
+  background-image: url("../img/banner/b10.jpg");
+}
+#sm-banner h4 {
+  font-size: 24px;
+  font-weight: var(--FW-500);
+  color: var(--white-color);
+}
+#sm-banner h2 {
+  font-size: 40px;
+  font-weight: var(--FW-700);
+  color: var(--white-color);
+}
+#sm-banner span {
+  color: var(--white-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#sm-banner .banner-box:hover button {
+  background-color: var(--common-color);
+  border: 1px solid var(--common-color);
+}
+/* ===========Action Banner Section =========== */
 /* ==============Home Page ================= */
