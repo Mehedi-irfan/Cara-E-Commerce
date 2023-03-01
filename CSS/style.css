@@ -117,6 +117,11 @@ body {
   bottom: -4px;
   left: 20px;
 }
+#mobile,
+#close {
+  display: none;
+  align-items: center;
+}
 #hero {
   background-image: url("../img/hero4.png");
   height: 90vh;
@@ -307,7 +312,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("../img/banner/b17.jpg");
-  width: 580px;
+  min-width: 580px;
   height: 50vh;
   background-position: center;
   background-size: cover;
@@ -420,4 +425,185 @@ body {
   border-bottom-left-radius: 0;
 }
 /* =============NewsLatter Section ============ */
+/* ===============Footer Section ============== */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo {
+  margin-bottom: 20px;
+}
+footer h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--black-color);
+  margin-bottom: 10px;
+  font-weight: var(--FW-500);
+  transition: var(--common-transition);
+  letter-spacing: 0.3px;
+}
+footer .follow {
+  margin-top: 10px;
+}
+footer .follow i {
+  padding: 4px;
+  color: #465b52;
+  cursor: pointer;
+  transition: var(--common-transition);
+}
+footer .install .row img {
+  border: 1px solid var(--common-color);
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+  color: var(--common-color);
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+/* ===============Footer Section ============== */
 /* ==============Home Page ================= */
+
+/* ==================Media Query Section=============== */
+/* ============Home Page Media Quarry tab============= */
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    right: -300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+    padding: 80px 0 0 10px;
+    transition: var(--common-transition);
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 30px;
+  }
+  #mobile,
+  #close {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    font-size: 25px;
+    color: #1a1a1a;
+    padding-left: 20px;
+  }
+  #close {
+    font-size: 26px;
+    color: var(--black-color);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #lg-bag {
+    display: none;
+  }
+  #hero {
+    height: 70vh;
+    background-position: top 30% right 30%;
+    padding: 0px 80px;
+  }
+  #product1 .pro-container {
+    justify-content: center;
+  }
+  #product1 .pro {
+    margin: 15px;
+  }
+  #banner {
+    height: 20vh;
+  }
+  #sm-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+  #newslatter .form {
+    width: 70%;
+  }
+}
+
+/* ============Home Page Media Quarry mobile============= */
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px 20px;
+  }
+  #header {
+    padding: 10px 30px;
+  }
+  #hero {
+    background-position: 55%;
+    padding: 0px 20px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  #features .fea-box {
+    width: 168px;
+    margin: 0 0 15px 0;
+  }
+  #product1 .pro {
+    width: 100%;
+  }
+  #banner {
+    height: 40vh;
+  }
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #text-banner {
+    padding: 0 20px;
+  }
+  #text-banner .banner-box {
+    width: 100%;
+  }
+  #newslatter .form {
+    width: 100%;
+  }
+  footer .copyright {
+    text-align: start;
+  }
+}
+
+/* ============Home Page Media Quarry============= */
+
+/* ==================Media Query Section=============== */
