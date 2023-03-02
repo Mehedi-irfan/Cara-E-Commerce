@@ -503,6 +503,22 @@ footer .copyright {
   color: var(--white-color);
 }
 /* ============Shop page Header ==================== */
+/* =============Shop Page pagination============ */
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  background-color: var(--common-color);
+  color: var(--white-color);
+  padding: 15px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: var(--FW-600);
+}
+#pagination a i {
+  font-size: 15px;
+}
+/* =============Shop Page pagination============ */
 /* ==================Shop Page====================== */
 
 /* ==================Media Query Section=============== */
