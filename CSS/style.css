@@ -520,6 +520,12 @@ footer .copyright {
 }
 /* =============Shop Page pagination============ */
 /* ==================Shop Page====================== */
+/* =============Single Product page ============= */
+#product-details .single-product-img {
+  width: 40%;
+  margin-right: 50px;
+}
+/* =============Single Product page ============= */
 
 /* ==================Media Query Section=============== */
 /* ============Home Page Media Quarry tab============= */
