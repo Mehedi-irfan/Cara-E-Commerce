@@ -579,6 +579,69 @@ footer .copyright {
 }
 /* =============Single Product page ============= */
 
+/* ===============Blog Page section ================ */
+#shop-header.blog-header {
+  background-image: url("../img/banner/b19.jpg");
+}
+#blogs {
+  padding: 150px 150px 0 150px;
+}
+#blogs .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+#blogs .blog-box .blog-img {
+  width: 50%;
+  margin-right: 50px;
+}
+#blogs .blog-box .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blogs .blog-box .blog-details {
+  width: 50%;
+}
+#blogs .blog-box .blog-details p {
+  line-height: 25px;
+}
+#blogs .blog-box .blog-details a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: var(--FW-600);
+  letter-spacing: 0.4px;
+  position: relative;
+  transition: var(--common-transition);
+}
+#blogs .blog-box .blog-details a::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: var(--black-color);
+  top: 5px;
+  right: -72px;
+}
+#blogs .blog-box .blog-details a:hover {
+  color: var(--common-color);
+}
+#blogs .blog-box .blog-details a:hover::after {
+  background-color: var(--common-color);
+}
+#blogs .blog-box h1 {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  font-size: 80px;
+  font-weight: 800;
+  color: #c9cbce;
+  z-index: -9;
+}
+/* ===============Blog Page section ================ */
+
 /* ==================Media Query Section=============== */
 /* ============Home Page Media Quarry tab============= */
 @media (max-width: 799px) {
