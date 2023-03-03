@@ -755,6 +755,20 @@ footer .copyright {
   #blogs {
     padding: 150px 100px 0 100px;
   }
+
+  /* ============About page============== */
+  #about-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about-head img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #about-head div {
+    padding-left: 0px;
+  }
 }
 
 /* ============Home Page Media Quarry mobile============= */
@@ -833,6 +847,14 @@ footer .copyright {
   }
   #blogs .blog-box .blog-details {
     width: 100%;
+  }
+  /* =============About page ======== */
+  #about-app h1 {
+    font-size: 40px;
+  }
+  #about-app .video {
+    width: 100%;
+    margin: 10px auto 0 auto;
   }
 }
 
