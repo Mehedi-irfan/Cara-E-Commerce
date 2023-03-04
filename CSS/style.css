@@ -680,6 +680,53 @@ footer .copyright {
   border-radius: 20px;
 }
 /* ==============About Page Section =================== */
+/* ============Contact page section=============== */
+#contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contacts .contact-details {
+  width: 40%;
+}
+#contacts .contact-details span {
+  font-size: 16px;
+  font-weight: var(--FW-500);
+}
+#contacts .contact-details h1 {
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0.3px;
+  font-weight: var(--FW-600);
+  padding: 20px 0px;
+}
+#contacts .contact-details h3 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+#contacts .contact-details li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+}
+#contacts .contact-details li i {
+  font-size: 16px;
+  padding-right: 20px;
+}
+#contacts .contact-details li p {
+  font-size: 18px;
+  margin: 0;
+}
+#contacts .map {
+  width: 55%;
+  height: 400px;
+}
+#contacts .map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* ============Contact page section=============== */
 
 /* ==================Media Query Section=============== */
 /* ============Home Page Media Quarry tab============= */
