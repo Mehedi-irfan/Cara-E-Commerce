@@ -781,6 +781,9 @@ footer .copyright {
 /* ============Contact page section=============== */
 
 /* ==============Cart Page================= */
+#cart {
+  overflow-x: auto;
+}
 #cart table {
   width: 100%;
   border-collapse: collapse;
@@ -829,6 +832,51 @@ footer .copyright {
 #cart table tbody td {
   font-size: 18px;
   font-weight: var(--FW-500);
+}
+#cart-coupon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#cart-coupon .coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+#cart-coupon .coupon h3,
+.subtotal h3 {
+  padding-bottom: 15px;
+  font-size: 23px;
+}
+#cart-coupon .coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+  font-size: 18px;
+}
+#cart-coupon .coupon button,
+.subtotal button {
+  background-color: var(--common-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+}
+.subtotal {
+  width: 50%;
+  padding: 30px;
+  border: 1px solid #e2e9e1;
+  margin-bottom: 30px;
+}
+.subtotal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 18px;
 }
 /* ==============Cart Page================= */
 
@@ -926,6 +974,10 @@ footer .copyright {
   }
   #form-details form {
     width: 50%;
+  }
+  /* =======================cart page============= */
+  #cart {
+    overflow-x: scroll;
   }
 }
 
@@ -1036,6 +1088,17 @@ footer .copyright {
   #form-details form {
     width: 100%;
     margin-bottom: 40px;
+  }
+  /* ============cart page ========== */
+  #cart-coupon {
+    display: flex;
+    flex-direction: column;
+  }
+  #cart-coupon .coupon {
+    width: 100%;
+  }
+  .subtotal {
+    width: 100%;
   }
 }
 
